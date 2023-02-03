@@ -1395,9 +1395,9 @@ void Session::execInternal()
 #endif
 
     // Request at least 8 bits per color for GL
-    SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 8);
-    SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 8);
-    SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 8);
+    SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 10);
+    SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 10);
+    SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 10);
 
     // We always want a resizable window with High DPI enabled
     Uint32 defaultWindowFlags = SDL_WINDOW_ALLOW_HIGHDPI | SDL_WINDOW_RESIZABLE;
